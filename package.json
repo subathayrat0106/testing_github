@@ -1,0 +1,19 @@
+{
+  "name": "github_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "mkdir github_test; cd github_test; git init; git remote add -f origin https://github.com/subathayrat0106/testing_github.git; git config core.sparseCheckout true; echo \"test\" >> .git/info/sparse-checkout; git pull --depth=1 origin main; cd ..; npm i ./github_test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subathayrat0106/testing_github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subathayrat0106/testing_github/issues"
+  },
+  "homepage": "https://github.com/subathayrat0106/testing_github#readme"
+}
